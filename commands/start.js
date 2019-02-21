@@ -44,11 +44,10 @@ function renderRaceTrack(horses, trackLength) {
     const trackSeperator = '-';
     const bar ='|';
 
-    let raceTrack = trackSeperator.repeat(trackLength) + '\n';
+    let raceTrack = '`' + trackSeperator.repeat(trackLength) + '`' + '\n';
     for (i=0; i<horses.length; i++){
-        raceTrack = raceTrack + finish + bar + ' '.repeat(horses[i] * 1.5) + horse + bar + ' ' + bar + ' ' + i + '\n' + trackSeperator.repeat(trackLength) + '\n'; 
+        raceTrack = raceTrack + finish + bar + ' '.repeat(horses[i] * 1.5) + horse + bar + ' ' + bar + ' ' + i + '\n' + '`' + trackSeperator.repeat(trackLength) + '`' + '\n'; 
     }
-    raceTrack = "```" + raceTrack + "```";
     return raceTrack;
 
 }
