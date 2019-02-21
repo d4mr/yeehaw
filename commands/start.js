@@ -48,6 +48,7 @@ function renderRaceTrack(horses, trackLength) {
     for (i=0; i<horses.length; i++){
         raceTrack = raceTrack + finish + bar + ' '.repeat(horses[i] * 1.5) + horse + bar + ' ' + bar + ' ' + i + '\n' + trackSeperator.repeat(trackLength) + '\n'; 
     }
+    raceTrack = "```" + raceTrack + "```";
     return raceTrack;
 
 }
