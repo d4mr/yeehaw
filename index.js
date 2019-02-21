@@ -25,7 +25,6 @@ client.on('message', message => {
 
     if(!client.commands.has(commandName)) return;
     const command = client.commands.get(commandName);
-    if(!command.status()) return message.reply('Please try later.');
     try {
         command.execute(message, args);
     } catch (error) {
