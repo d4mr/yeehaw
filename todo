@@ -1,0 +1,4 @@
+Split each horse into seperate message, use promise.all()
+Set up different stats for each server
+Set bot status in server specific fashion
+Set up betting
