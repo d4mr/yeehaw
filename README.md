@@ -1,5 +1,5 @@
 # YeeHaw!
-A horse reacing and betting animated bot for Discord, writting with [Discord.js](https://discord.js.org/)
+A horse racing and betting animated bot for Discord, writting with [Discord.js](https://discord.js.org/)
 
 ## Running it for yourself
 Clone the repo and install dependencies.
