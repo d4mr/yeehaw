@@ -1,7 +1,8 @@
 const fs = require('fs');
+const { CLIENT_SECRET } = require('./env.js');
 
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const { prefix } = require('./config.json');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -34,4 +35,4 @@ client.on('message', message => {
 
 });
 
-client.login(token);
+client.login(CLIENT_SECRET);
